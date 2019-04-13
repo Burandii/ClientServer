@@ -1,0 +1,45 @@
+﻿@model MicrominerResults
+@{
+    ViewData["Title"] = "Search Page";
+    
+}
+
+<div>
+    <br />
+    Search from the inputs
+    <form asp-controller="Home" asp-action="GetSearchResults" method="post">
+        <textarea rows="4" cols="50" name="input"></textarea>
+        <br />
+        <input type="submit" value="Submit" />
+    </form>
+    
+    @if (Model != null)
+    {
+    <div>
+        <h1>Search Result:</h1>
+        @foreach (var s in Model.SearchResult)
+        {
+            @Html.Raw(s)
+            <br/>
+        }
+    </div>
+        <br />
+        <br />
+        <div>
+            <h1>User Input:</h1>
+            <textarea rows="20" cols="100" name="user_input">@Html.Raw(Model.UserInput)</textarea>
+        </div>
+        <br />
+        <div>
+            <h1>Circular Shift:</h1>
+            <br/>
+            <textarea rows="20" cols="100" name="circularly_shifted">@Html.Raw(Model.CircularlyShifted)</textarea>
+        </div>
+        <br />
+        <div>
+            <h1>Alphabetized:</h1>
+            <br/>
+            <textarea rows="20" cols="100" name="alphabetized">@Html.Raw(Model.Alphabetized)</textarea>
+        </div>
+    }
+</div>

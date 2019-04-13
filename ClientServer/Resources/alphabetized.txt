@@ -1,0 +1,16 @@
+arizona State University http://asu.edu
+Austin University of Texas at http://www.utexas.edu
+Bing Microsoft http://www.bing.com
+Central Oklahoma University of http://www.uco.edu
+Dallas University of Texas at http://www.utd.edu
+Edmon Sun http://www.edmondsun.com
+Microsoft Bing http://www.bing.com
+Oklahoma University of Central http://www.uco.edu
+State University arizona http://asu.edu
+Sun Edmon http://www.edmondsun.com
+Texas at Austin University of http://www.utexas.edu
+Texas at Dallas University of http://www.utd.edu
+University arizona State http://asu.edu
+University of Central Oklahoma http://www.uco.edu
+University of Texas at Austin http://www.utexas.edu
+University of Texas at Dallas http://www.utd.edu

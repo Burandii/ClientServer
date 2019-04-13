@@ -1,0 +1,26 @@
+﻿[Main Input]
+University of Central Oklahoma http://www.uco.edu
+University of Texas at Dallas http://www.utd.edu
+University of Texas at Austin http://www.utexas.edu
+arizona State University http://asu.edu
+Edmon Sun http://www.edmondsun.com
+Microsoft Bing http://www.bing.com
+
+
+-- example parts --
+
+Input:
+University Oklahoma
+
+Will return:
+University of Central Oklahoma http://www.uco.edu
+Oklahoma State University http://www.oksu.edu
+
+
+-- Notes --
+
+Circularly shift the [Main Input]
+Remove the http part
+Remove noise words
+Sort all of the lines
+Use binary search to find lines that contain all of the keywords

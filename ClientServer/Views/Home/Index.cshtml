@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <br />
+    Set the inputs to search from:
+    <form asp-controller="Home" asp-action="SetSearchData" method="post">
+        <textarea rows="4" cols="50" name="input"></textarea>
+        <br />
+        <input type="submit" value="Submit" />
+    </form>
+
+</div>
