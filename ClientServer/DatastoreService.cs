@@ -10,6 +10,12 @@ namespace ClientServer
     public class DatastoreService
     {
         private const string Path = @".\Resources\";
+
+        public DatastoreService()
+        {
+            if (!Directory.Exists(Path))
+                Directory.CreateDirectory(Path);
+        }
         public void SaveDataToFile(string input, string fileName)
         {
             string path = Path + fileName;
