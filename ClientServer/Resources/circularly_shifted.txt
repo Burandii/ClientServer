@@ -1,16 +1,11 @@
 University of Central Oklahoma http://www.uco.edu
 Central Oklahoma University of http://www.uco.edu
 Oklahoma University of Central http://www.uco.edu
-University of Texas at Dallas http://www.utd.edu
-Texas at Dallas University of http://www.utd.edu
-Dallas University of Texas at http://www.utd.edu
-University of Texas at Austin http://www.utexas.edu
-Texas at Austin University of http://www.utexas.edu
-Austin University of Texas at http://www.utexas.edu
-arizona State University http://asu.edu
-State University arizona http://asu.edu
-University arizona State http://asu.edu
-Edmon Sun http://www.edmondsun.com
-Sun Edmon http://www.edmondsun.com
-Microsoft Bing http://www.bing.com
-Bing Microsoft http://www.bing.com
+University of Oklahoma http://www.ou.edu
+Oklahoma University of http://www.ou.edu
+Arizona State University http://www.asu.edu
+State University Arizona http://www.asu.edu
+University Arizona State http://www.asu.edu
+Oklahoma State University http://www.osu.edu
+State University Oklahoma http://www.osu.edu
+University Oklahoma State http://www.osu.edu

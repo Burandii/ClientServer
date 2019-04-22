@@ -31,11 +31,16 @@ namespace ClientServer
         {
             var results = new List<string>();
             string line;
-            StreamReader file = new StreamReader(Path + fileName);
+            string[] words = input.Split(' ');
+            var file = new StreamReader(Path + fileName);
             while ((line = file.ReadLine()) != null)
             {
-                if (line.ToUpper().Contains(input.ToUpper()))
+                for(int i = 0; i < words.Length; i++)
                 {
+                    if (!line.ToUpper().Contains(input.ToUpper()))
+                    {
+                        break;
+                    }
                     results.Add(line);
                 }
             }
