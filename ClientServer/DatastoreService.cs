@@ -35,13 +35,21 @@ namespace ClientServer
             var file = new StreamReader(Path + fileName);
             while ((line = file.ReadLine()) != null)
             {
+                bool containsAllWords = false;
                 for(int i = 0; i < words.Length; i++)
                 {
-                    if (!line.ToUpper().Contains(input.ToUpper()))
+                    if (!line.ToUpper().Contains(words[i].ToUpper()))
                     {
+                        containsAllWords = false;
                         break;
                     }
-                    results.Add(line);
+                    else
+                    {
+                        containsAllWords = true;
+                    }
+
+                    if(i == words.Length - 1 && containsAllWords)
+                        results.Add(line);
                 }
             }
 
