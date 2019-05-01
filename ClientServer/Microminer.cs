@@ -41,7 +41,7 @@ namespace ClientServer
                 bool containsAllWords = false;
                 for (int k = 0; k < words.Length; k++)
                 {
-                    if (!lines[i].ToUpper().Contains(words[i].ToUpper()))
+                    if (!lines[i].ToUpper().Contains(words[k].ToUpper()))
                     {
                         containsAllWords = false;
                         break;
@@ -50,7 +50,7 @@ namespace ClientServer
                     {
                         containsAllWords = true;
                     }
-                    if (i == words.Length - 1 && containsAllWords)
+                    if (k == words.Length - 1 && containsAllWords)
                         results.Add(lines[i]);
                 }
             }

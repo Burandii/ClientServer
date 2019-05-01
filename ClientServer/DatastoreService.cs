@@ -27,6 +27,7 @@ namespace ClientServer
             return File.ReadAllText(Path + fileName);
         }
 
+        /*
         public List<string> GetContainingLines(string input, string fileName)
         {
             var results = new List<string>();
@@ -55,7 +56,7 @@ namespace ClientServer
 
             file.Close();
             return results;
-        }
+        }*/
 
     }
 }
