@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace ClientServer.KWIC
 {
-    public class Alphabetizer
+    public class Alphabetizer : IAlphabetizer
     {
         public List<CharIndex> GetAlphabetizedIndices(char[] input, List<CharIndex> circularlyShifted)
         {

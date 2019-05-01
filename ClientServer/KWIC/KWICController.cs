@@ -1,12 +1,11 @@
 ﻿using System.Collections.Generic;
-using SharedData.KWIC;
 
 namespace ClientServer.KWIC
 {
     public class KWICController
     {
-        private readonly CircularShifter _circularShifter;
-        private readonly Alphabetizer _alphabetizer;
+        private readonly ICircularShifter _circularShifter;
+        private readonly IAlphabetizer _alphabetizer;
         private readonly OutputManager _outputManager;
         private readonly InputManager _inputManager;
 

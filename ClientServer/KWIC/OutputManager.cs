@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ClientServer.KWIC;
 
-namespace SharedData.KWIC
+namespace ClientServer.KWIC
 {
     public class OutputManager
     {

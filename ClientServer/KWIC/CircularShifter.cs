@@ -6,9 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using ClientServer.KWIC;
 
-namespace SharedData.KWIC
+namespace ClientServer.KWIC
 {
-    public class CircularShifter
+    public class CircularShifter : ICircularShifter
     {
         private readonly string[] _noiseWords =
         {

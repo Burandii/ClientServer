@@ -28,7 +28,34 @@ namespace ClientServer
 
         public List<string> GetMatches(string input)
         {
-            return _datastore.GetContainingLines(input, "user_input.txt");
+            var results = new List<string>();
+
+            var lines = GetOriginalInput().Split(
+                new[] { "\r\n", "\r", "\n" },
+                StringSplitOptions.None
+            );
+            string[] words = input.Split(' ');
+
+            for (int i = 0; i < lines.Length; i++)
+            {
+                bool containsAllWords = false;
+                for (int k = 0; k < words.Length; k++)
+                {
+                    if (!lines[i].ToUpper().Contains(words[i].ToUpper()))
+                    {
+                        containsAllWords = false;
+                        break;
+                    }
+                    else
+                    {
+                        containsAllWords = true;
+                    }
+                    if (i == words.Length - 1 && containsAllWords)
+                        results.Add(lines[i]);
+                }
+            }
+
+            return results;
         }
 
         public string GetAlphabetized()
